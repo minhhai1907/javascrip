@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
-   
+                <title>User-defined objects</title>
+                
                 <script type="text/javascript">
-                   function sayHello()
-                   {
-                      document.write ("Hello there!");
-                   }
+                   var book = new Object();   // Create the object
+                   book.subject = "Perl"; // Assign properties to the object
+                   book.author  = "Mohtashim";
                 </script>
                 
              </head>
+             
              <body>
-                <p>Click the following button to call the function</p>
-                
-                <form>
-                   <input type="button" onclick="sayHello()" value="Xin chao!">
-                </form>
-                
-                <p>Use different text in write method and then try...</p>
-             </body>
+               var leapYear = function(year){
+                  if ((year % 4===0 &&year%100 !==0 && year % 400 !==0)||(year%100===0 && year % 400===0)){
+                  return year + " la nam nhuan.";
+                  } else{
+                  return year + " la nam khong nhuan.";
+                  }
+                  };
+                  var input = prompt("Input year: ");
+                  leapYear(input);
+             </body>  
 </html>

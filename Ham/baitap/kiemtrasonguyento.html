@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function creatNumber(){
+            let num = +prompt('enter a number');
+            return num;
+        }
+        function checkPrime(num){
+            let count=0;
+            for(i=2;i<=Math.sqrt(num);i++){
+                if(num%i===0){
+                count++;
+            }
+            }
+                return count;
+               
+        }
+        function result( num, count){
+            if(count===0 && num>=2){
+                    alert ( num +" is a prime");
+                } else
+                alert (num+ " is not a prime");
+            }
+        function callFunction(){
+            let num = creatNumber();
+            let count =checkPrime(num);
+            let display = result(num,count);
+        }
+        callFunction();
+    </script>
+</body>
+
+</html>

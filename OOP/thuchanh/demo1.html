@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Javascript light bulb</title>
+    </head>
+    <body>
+        <h1>javascript can change image</h1>
+        <p> <img id='lightbulb' onmouseover="changeImage(this)" onmouseout="resetImg(this)" src="BD0.gif" /></p>
+        <p>
+            bring your mouse to the light bulb to turn on/off the light
+        </p>
+        <script>
+        function changeImage(){
+            document.getElementById("lightbulb"). src=" BD0.gif"
+        }
+        function resetImg(){
+            document.getElementById("lightbulb"). src="BD01.gif"
+        }
+        </script>
+    </body>
+</html>

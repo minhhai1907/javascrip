@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body> <button type="button" onclick="showMessage();">Click Me!</button>
+<body>
     <script>
-        function showMessage(){
-     console.log('Xin chào!');
- }
-        </script>
+    let a = +prompt('enter number a:');
+    let b = +prompt('enter number b:');
+    if (a%b==0){
+        alert (a + ' chia het cho' +b);
+    }else
+    alert ( a +' khong chia het cho' +b);
+    </script>
 </body>
 </html>

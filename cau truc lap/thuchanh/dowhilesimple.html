@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body> <button type="button" onclick="showMessage();">Click Me!</button>
+<body>
     <script>
-function showMessage(){
-     document.write('Xin chào!');
- }
-
-</script>
-    
+    let num =null;
+    do {
+        num = prompt('enter a number from 1 to 10');
+    } while (num<1 || num>10);
+    alert ('the input number is:'+" "+ num);
+    </script>
 </body>
 </html>
